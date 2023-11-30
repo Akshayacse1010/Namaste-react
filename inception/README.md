@@ -1,1 +1,1 @@
-# namaste ract by akshay saini
+# namaste react by akshay saini
