@@ -1,21 +1,17 @@
-const head = React.createElement(
-  'h1',
-  { id: 'heading' },
-  'hello world from react'
-);
-/**
- * <div id = "parent"
- */
-const parent = React.createElement('div', { id: 'parent' }, [
-  React.createElement('div', { id: ' child' }, [
-    React.createElement('h1', {}, 'hello guys'),
-    React.createElement('h1', {}, 'hello guys'),
-  ]),
-  React.createElement('div', { id: ' child' }, [
-    React.createElement('h1', {}, 'hello guys'),
-    React.createElement('h1', {}, 'hello guys'),
-  ]),
-]);
+import React from 'react';
+import ReactDOM from 'react-dom';
 
+//react element = equivalent to dom element
+//react component creation
+const Title = () => <h1 className="head">hello this is jsx used component</h1>;
+const Para = () => (
+  <>
+    <h1>{11000 + 3245}</h1>
+
+    <Title></Title>
+    <Title />
+    <p>this is a trial for component composition</p>
+  </>
+);
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(parent);
+root.render(<Para />);
